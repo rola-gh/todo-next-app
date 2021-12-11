@@ -1,5 +1,13 @@
-function HomePage() {
-    return <div>Welcome to Next.js!</div>
-}
+import React from 'react'
+import { Container } from "react-bootstrap"
+import Todo from "../components/Todo/Todo"
 
-export default HomePage
+export default function TodoPage() {
+  return (
+      <div>
+        <Container>
+          <Todo />
+        </Container>
+      </div>
+  )
+}
