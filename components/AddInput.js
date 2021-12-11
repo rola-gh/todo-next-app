@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import styles from "../styles/AddInput.module.css";
+import { v4 } from "uuid"
 
 function AddInput({ setTodos, todos }) {
 
@@ -24,7 +25,7 @@ function AddInput({ setTodos, todos }) {
 				className={styles.input}
 				value={todo}
 				onChange={(e) => setTodo(e.target.value)}
-				placeholder="Add a new task ..."
+				placeholder="Add a new task here..."
 			/>
 			<button className={styles.addBtn} onClick={addTodo}>
 				Add

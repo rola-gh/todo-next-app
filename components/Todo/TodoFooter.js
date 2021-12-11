@@ -8,7 +8,7 @@ function TodoFooter({ numberOfIncompleteTasks }) {
 				{numberOfIncompleteTasks}{" "}
 				{numberOfIncompleteTasks === 1 ? "task" : "tasks"} left
 			</p>
-			{/*<Link href="/followers">Followers</Link>*/}
+			<Link href="/followers">Followers</Link>
 		</div>
 	);
 }
